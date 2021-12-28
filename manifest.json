@@ -1,8 +1,8 @@
 {
     "name": "VSCO Profile Picture Enhancer",
-    "version": "0.1",
+    "version": "0.2",
     "description": "Make a VSCO profile picture's source the full size image instead of a download link.",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "content_scripts": [{
         "matches": ["https://vsco.co/*"],
         "all_frames": true,
