@@ -7,9 +7,16 @@ refresh the page. */
 
 images = document.getElementsByTagName('img');
 if (images.length > 0) {
-    smallpfp = images[0].src;
+    smallpfp = images[1].src;
     fullsize = smallpfp.split('?')[0];
-    //document.getElementsByClassName("css-4rtq1z-Avatar ezmwuux1")[0].classList.remove('css-4rtq1z-Avatar', 'ezmwuux1');
-    //console.log(fullsize);
-    images[0].src = fullsize;
+    console.log(fullsize);
+    images[1].src = fullsize;
+    for(var i = 2, max = images.length; i < max; i++) {
+        // console.log(images[i]);
+        smallpfp = images[i].src;
+        fullsize = smallpfp.split('?')[0];
+        images[i].src = fullsize;
+        // console.log(fullsize);
+    } 
+
 }
