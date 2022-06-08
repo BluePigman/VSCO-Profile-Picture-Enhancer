@@ -10,6 +10,8 @@ if (images.length > 0) {
     smallpfp = images[1].src;
     fullsize = smallpfp.split('?')[0];
     console.log(fullsize);
+    a = "https://bluepigman.github.io/media-links-in-browser/" + "?" + fullsize
+    console.log(a)
     images[1].src = fullsize;
     for(var i = 2, max = images.length; i < max; i++) {
         // console.log(images[i]);
